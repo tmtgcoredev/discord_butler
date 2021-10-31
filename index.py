@@ -15,4 +15,5 @@ async def on_message(message):
     if message.content.startswith(">sparta"):
         await message.channel.send("ahoo ahoo ahoo!!!")
 
-client.run(os.environ['TOKEN'])
+new_var = os.environ['TOKEN']
+client.run(new_var)
