@@ -1,10 +1,18 @@
 import discord
-from discord.ext import commands
+import os
 
-bot = commands.Bot(command_prefix='>')
+client = discord.Client()
 
-@bot.command()
-async def ping(ctx):
-    await ctx.send('pong')
+@client.event
+async def on_ready():
+    print("THIS. IS. SPARTA!!!")
 
-bot.run('token')
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+    
+    if message.content.startswith(">sparta"):
+        await message.channel.send("ahoo ahoo ahoo!!!")
+
+client.run(os.getenv('TOKEN'))
