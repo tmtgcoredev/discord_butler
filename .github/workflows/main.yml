@@ -29,4 +29,4 @@ jobs:
       - name: Run a one-line script
         run: echo "PISO"
         env:
-          PISO: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
