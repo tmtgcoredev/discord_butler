@@ -29,4 +29,5 @@ jobs:
       - name: Run a one-line script
         env:
           TOKEN: ${{ secrets.TOKEN }}
-        run: echo TOKEN
+        if:  env.TOKEN == ''
+        run: echo "PALPAK!"
