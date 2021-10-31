@@ -15,4 +15,4 @@ async def on_message(message):
     if message.content.startswith(">sparta"):
         await message.channel.send("ahoo ahoo ahoo!!!")
 
-print(os.environ['TOKEN'])
+print(os.environ['PISO'])
