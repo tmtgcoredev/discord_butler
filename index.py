@@ -1,5 +1,6 @@
 import discord
 import os
+token = os.environ['TOKEN']
 
 client = discord.Client()
 
@@ -15,4 +16,4 @@ async def on_message(message):
     if message.content.startswith(">sparta"):
         await message.channel.send("ahoo ahoo ahoo!!!")
 
-client.run(os.environ['TOKEN'])
+client.run(token)
