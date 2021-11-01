@@ -10,4 +10,4 @@ import os
 #     await ctx.send('pong')
 
 # bot.run(os.getenv('PISO'))
-print(os.getenv('PISO', 'SUSO'))
+print(os.getenv('CI', 'fail'))
