@@ -1,7 +1,7 @@
 import discord
 import os
 
-if os.environ['CI']:
+if os.getenv('CI'):
     print('Looks like GitHub!')
 else:
     print('Maybe running locally?')
