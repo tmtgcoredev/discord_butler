@@ -17,5 +17,5 @@ async def on_message(message):
     if message.content.startswith(">sparta"):
         await message.channel.send("ahoo ahoo ahoo!!!")
 
-piso = os.environ['PISO']
-client.run(piso)
+print(os.getenv('jobs'))
+# client.run(piso)
