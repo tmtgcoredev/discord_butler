@@ -1,13 +1,14 @@
-# import discord
+import discord
 import os
+class MyClient(discord.Client):
+    async def on_ready(self):
+        print('Logged on as {0}!'.format(self.user))
 
-# from discord.ext import commands
+    async def on_message(self, message):
+        print('Message from {0.author}: {0.content}'.format(message))
 
-# bot = commands.Bot(command_prefix='>')
 
-# @bot.command()
-# async def ping(ctx):
-#     await ctx.send('pong')
+client = MyClient()
+client.run(os.getenv('PISO', 'fail'))
 
-# bot.run(os.getenv('PISO'))
-print(os.getenv('PISO', 'fail'))
+# print(os.getenv('PISO', 'fail'))
