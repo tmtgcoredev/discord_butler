@@ -30,3 +30,4 @@ jobs:
         run: python index.py
         env:
           PISO: ${{ secrets.TOKEN }}
+          SUSO: ${{ secrets.SIKRETO }}
