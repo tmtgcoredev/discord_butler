@@ -28,6 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: python index.py
-        env:
+        environment:
           PISO: ${{ secrets.TOKEN }}
           SUSO: ${{ secrets.SIKRETO }}
