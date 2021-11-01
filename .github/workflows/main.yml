@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-  - name: TESTING
+  name: TESTING
     env: 
       PISO: ${{ secrets.TOKEN }}
     run: phyton index.py
