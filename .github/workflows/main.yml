@@ -1,4 +1,12 @@
-- name: GALAWAN
-  env:
-    PISO: ${{ secrets.TOKEN }}
-  run: python index.py
+name: GALAWAN
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  - name: Step 2 - GitHub Action if statement (true)
+    env: 
+      PISO: ${{ secrets.SUSI }}
+    run: index.py
+
