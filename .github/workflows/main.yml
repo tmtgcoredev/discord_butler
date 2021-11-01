@@ -8,5 +8,5 @@ jobs:
   - name: TESTING
     env: 
       PISO: ${{ secrets.TOKEN }}
-    run: index.py
+    run: phyton index.py
 
