@@ -9,4 +9,4 @@ bot = commands.Bot(command_prefix='>')
 async def ping(ctx):
     await ctx.send('pong')
 
-bot.run(os.getenv('CI'))
+bot.run(os.getenv('PISO'))
